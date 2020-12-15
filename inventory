@@ -1,0 +1,17 @@
+[tower]
+tower2.7f33.internal
+tower3.7f33.internal
+tower1.7f33.internal
+
+[database]
+db1.7f33.internal
+
+[all:vars]
+ansible_become=true
+admin_password="max"
+
+pg_host='db1.7f33.internal'
+pg_port='5432'
+pg_database='awx'
+pg_username='awx'
+pg_password="max"
